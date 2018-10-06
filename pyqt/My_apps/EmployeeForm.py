@@ -110,29 +110,25 @@ class EmployeeForm(QMainWindow):
 
         self.show()
 
+
         self.employee.pushButton_reg.clicked.connect(self.addToDb)
         # self.employee.pushButton_update.clicked.connect(self.updaterow)
         self.employee.pushButton_back.clicked.connect(QtWidgets.qApp.quit)
         self.employee.pushButton_delete.clicked.connect(self.delrow)
+        a = self.random_string_generator()
+        print (a)
+        self.employee.lineEdit_hrm_code.setText("HRM-"+a)
 
-    def random_string_generator(size=12, chars=string.ascii_lowercase + string.digits):
+    def random_string_generator(self, size=6, chars=string.ascii_lowercase + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))
 
-    def unique_order_id_generator(instance):
-        """
-        This is for a Django project with an order_id field
-        """
-        order_new_id = random_string_generator()
 
-        Klass = instance.__class__
-        qs_exists = Klass.objects.filter(order_id=order_new_id).exists()
-        if qs_exists:
-            return unique_slug_generator(instance)
-        return order_new_id
+
 
     def addToDb(self):
 
         print(self.i)
+        hrm_code = self.random_string_generator()
 
         nid = self.employee.lineEdit_IDNo.text()
         reg_date =  self.datetime.toString(Qt.DefaultLocaleLongDate)
@@ -144,7 +140,8 @@ class EmployeeForm(QMainWindow):
         ln = self.employee.lineEdit_ln.text()
         phone = self.employee.lineEdit_tell.text()
         email = self.employee.lineEdit_email.text()
-        address = self.employee.textEdit_address.text()
+        #address = self.employee.textEdit_address
+        address = '20100 NAKURU'
         exp = self.employee.spinBox_experience.text()
         dob = self.employee.dateEdit_dob.text()
         skill = self.employee.comboBox_skill.currentText()
@@ -204,13 +201,13 @@ class EmployeeForm(QMainWindow):
             available = None
 
 
-        print(nid, reg_date, kra, fn, mn, ln, gender, payby, available, phone, email,address, dob, stamp, urole, exp, skill)
+        print(nid, reg_date, hrm_code, kra, fn, mn, ln, gender, payby, available, phone, email,address, dob, stamp, urole, exp, skill)
 
         with sqlite3.connect('database_hrm.db') as dbconn:
             c = dbconn.cursor()
         c.execute(
-            "INSERT INTO user_employees(National_ID, Registration_Date, KRA_PIN, First_Name, Middle_Name, Last_Name, Gender,Availability,Payment_Mode, Phone, Email,Address, DOB, User_role,Experience_level,Skills)VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-            (nid, reg_date, kra, fn, mn, ln, gender,available,payby, phone, email,address, dob, urole, exp, skill))
+            "INSERT INTO user_employees(National_ID, Registration_Date,Employee_hrm_code, KRA_PIN, First_Name, Middle_Name, Last_Name, Gender,Availability,Payment_Mode, Phone, Email,Address, DOB, User_role,Experience_level,Skills)VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (nid, reg_date,hrm_code, kra, fn, mn, ln, gender,available,payby, phone, email,address, dob, urole, exp, skill))
 
         QMessageBox.information(self, 'Success', "Info Added Successfully !!!", QMessageBox.Ok)
         print('Info Added Successfully')

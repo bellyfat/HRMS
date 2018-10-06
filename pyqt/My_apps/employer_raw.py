@@ -49,12 +49,12 @@ class empr_form(Dialog):
         import random
 
         # Just alphanumeric characters
-        chars = string.letters + string.digits
+        chars = string.alphabets + string.digits
 
         # Alphanumeric + special characters
-        chars = string.letters + string.digits + string.punctuation
+        chars = string.digits + string.digits + string.punctuation
 
-        pwdSize = 20
+        pwdSize = 10
 
         print().join((random.choice(chars)) for x in range(pwdSize))
         print(self.i)
