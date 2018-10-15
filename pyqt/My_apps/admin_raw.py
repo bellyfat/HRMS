@@ -20,8 +20,8 @@ import sqlite3
 ##############################################dashForm start##################################################################################
 class HRMForm(QMainWindow):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, master=None):
+        QMainWindow.__init__(self, master)
         self.dashboard = Ui_HRM_Dashboard_view()
 
         self.dashboard.setupUi(self)

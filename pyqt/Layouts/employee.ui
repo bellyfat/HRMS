@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1379</width>
-    <height>926</height>
+    <height>921</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -262,6 +262,12 @@
                </property>
                <property name="statusTip">
                 <string>Enter Kenya Revenue of Authority Personal Identification Number</string>
+               </property>
+               <property name="inputMethodHints">
+                <set>Qt::ImhPreferUppercase|Qt::ImhUppercaseOnly</set>
+               </property>
+               <property name="maxLength">
+                <number>32767</number>
                </property>
               </widget>
              </item>
@@ -630,7 +636,7 @@
                     <string>Enter Employee Email address</string>
                    </property>
                    <property name="inputMethodHints">
-                    <set>Qt::ImhNone</set>
+                    <set>Qt::ImhEmailCharactersOnly</set>
                    </property>
                   </widget>
                  </item>

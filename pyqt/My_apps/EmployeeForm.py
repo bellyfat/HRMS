@@ -119,7 +119,7 @@ class EmployeeForm(QMainWindow):
         print (a)
         self.employee.lineEdit_hrm_code.setText("HRM-"+a)
 
-    def random_string_generator(self, size=6, chars=string.ascii_lowercase + string.digits):
+    def random_string_generator(self, size=6, chars=string.ascii_uppercase + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))
 
 
