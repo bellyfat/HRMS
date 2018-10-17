@@ -20,7 +20,7 @@ class Ui_splashHRMS(object):
         splashHRMS.setStyleSheet("color:rgb(85, 255, 255);background-color:rgb(0, 85, 127)")
         self.progressBar_logo = QtWidgets.QProgressBar(splashHRMS)
         self.progressBar_logo.setGeometry(QtCore.QRect(0, 320, 471, 20))
-        self.progressBar_logo.setProperty("value", 100)
+        self.progressBar_logo.setProperty("value", 70)
         self.progressBar_logo.setObjectName("progressBar_logo")
         self.label = QtWidgets.QLabel(splashHRMS)
         self.label.setGeometry(QtCore.QRect(30, 30, 391, 61))

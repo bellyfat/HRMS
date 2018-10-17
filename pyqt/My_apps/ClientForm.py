@@ -89,6 +89,7 @@ class ClientForm(QMainWindow):
         self.i = self.model.rowCount()
         self.clients.lcdNumber_user_id.display(self.i)
         self.show()
+        self.clients.comboBox_clients_list.addItems('No User Yet')
 
         conn = sqlite3.connect('database_hrm.db')
         c = conn.cursor()
@@ -101,12 +102,11 @@ class ClientForm(QMainWindow):
                 print(row)
                 self.clients.comboBox_clients_list.addItems(row)
 
-        else:
-            self.clients.comboBox_clients_list.addItems('No User Yet')
+
 
         a = self.random_string_generator()
         print(a)
-        self.clients.lineEdit_invoice_new.setText("INV-" + a)
+        self.clients.lineEdit_invoice_new.setText("2018-" + a)
 
 
 
