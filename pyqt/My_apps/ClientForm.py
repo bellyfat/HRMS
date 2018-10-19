@@ -89,7 +89,7 @@ class ClientForm(QMainWindow):
         self.i = self.model.rowCount()
         self.clients.lcdNumber_user_id.display(self.i)
         self.show()
-        self.clients.comboBox_clients_list.addItems('No User Yet')
+        self.clients.comboBox_clients_list.addItem('No User Yet')
 
         conn = sqlite3.connect('database_hrm.db')
         c = conn.cursor()
