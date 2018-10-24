@@ -3,6 +3,7 @@ from clients import *
 from admin_raw import *
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QTableView, QMenuBar, QStatusBar
 from PyQt5 import QtSql
+from PyQt5.QtSql import QSqlQuery
 from PyQt5 import QtCore, QtGui
 from PyQt5.QtCore import QDateTime, QDate, QTime, Qt
 import sqlite3
@@ -89,23 +90,24 @@ class ClientForm(QMainWindow):
         self.i = self.model.rowCount()
         self.clients.lcdNumber_user_id.display(self.i)
         self.show()
-        self.clients.comboBox_clients_list.addItem('No User Yet')
+        self.clients.comboBox_clients_list.addItem('Please Select...')
+        self.clients.comboBox_clients_list.currentTextChanged.connect(self.combobox_changed)
 
         conn = sqlite3.connect('database_hrm.db')
         c = conn.cursor()
         c.execute('SELECT Company_Name from user_clients')
         rows = c.fetchall()
-        print(rows)
         if rows!=None:
 
             for row in rows:
-                print(row)
+                #print(row)
                 self.clients.comboBox_clients_list.addItems(row)
 
 
 
+
         a = self.random_string_generator()
-        print(a)
+        #print(a)
         self.clients.lineEdit_invoice_new.setText("2018-" + a)
 
 
@@ -163,6 +165,30 @@ class ClientForm(QMainWindow):
         print(self.clients.tableWidget_records.currentIndex().row())
         print(self.clients.tableView_workers_old.currentIndex().row())
         print(self.clients.tableView_workers.currentIndex().row())
+
+    def combobox_changed(self):
+        client = self.clients.comboBox_clients_list.currentText()
+        query = QSqlQuery()
+        query.prepare('SELECT * from user_clients WHERE Company_Name=:client')
+        query.bindValue(':client', client)
+        rows = query.exec_()
+        print (rows)
+        for rows in query:
+            self.clients.lineEdit_invoice_new.setText(row[2])
+            self.clients.lineEdit_kra_pin_new.setText(row[2])
+            self.clients.lineEdit_org_name_new.setText(row[2])
+            self.clients.lineEdit_fn_repnew.setText(row[2])
+            self.clients.lineEdit_mn_repnew.setText(row[2])
+            self.clients.lineEdit_ln_repnew.setText(row[2])
+            self.clients.lineEdit_tell_repnew.setText(row[2])
+            self.clients.lineEdit_email_repnew.setText(row[2])
+        #self.clients.lineEdit_IDNo_new.text()
+        reg_date = stamp
+        # reg_no = self.clients.lineEdit_regNo_new.text()
+
+        # address = self.clients.lineEdit_address.text()
+
+
 
 
 
