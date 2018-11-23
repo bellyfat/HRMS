@@ -247,7 +247,7 @@ class EmployeeForm(QMainWindow):
         #self.exit_action = QtWidgets.qApp.quit()
         self.window = HRMForm()
         self.window.showMaximized()
-        EmployeeForm.destroy(self)
+        EmployeeForm.close(self)
 
 
 

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1443</width>
+    <width>1380</width>
     <height>735</height>
    </rect>
   </property>
@@ -18,13 +18,13 @@
     <normaloff>../images/icon.png</normaloff>../images/icon.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(40, 93, 117);</string>
+   <string notr="true">background-color:rgb(170, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>60</y>
       <width>1351</width>
       <height>611</height>
@@ -58,7 +58,7 @@
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:rgb(71, 214, 216)</string>
+          <string notr="true"/>
          </property>
          <property name="title">
           <string>Enter New Client  Details</string>
@@ -111,7 +111,7 @@
            <rect>
             <x>16</x>
             <y>70</y>
-            <width>791</width>
+            <width>391</width>
             <height>466</height>
            </rect>
           </property>
@@ -463,292 +463,7 @@
             </layout>
            </item>
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_10">
-             <item>
-              <widget class="QGroupBox" name="groupBox_6">
-               <property name="minimumSize">
-                <size>
-                 <width>421</width>
-                 <height>266</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>Ravie</family>
-                </font>
-               </property>
-               <property name="title">
-                <string>Organization/Company Client</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="checked">
-                <bool>false</bool>
-               </property>
-               <widget class="QWidget" name="layoutWidget_8">
-                <property name="geometry">
-                 <rect>
-                  <x>10</x>
-                  <y>20</y>
-                  <width>401</width>
-                  <height>242</height>
-                 </rect>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_40">
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_48">
-                   <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_41">
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_49">
-                       <item>
-                        <widget class="QLabel" name="label_4">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Company/Organization Name :</string>
-                         </property>
-                         <property name="buddy">
-                          <cstring>lineEdit_org_name_new</cstring>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_org_name_new">
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                       <property name="statusTip">
-                        <string>Clients Organization Name</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_50"/>
-                     </item>
-                    </layout>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="label_5">
-                   <property name="font">
-                    <font>
-                     <family>System</family>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Representative Names :</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <layout class="QVBoxLayout" name="verticalLayout_11">
-                   <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_42">
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_51">
-                       <item>
-                        <widget class="QLabel" name="label_63">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>First Name :</string>
-                         </property>
-                         <property name="buddy">
-                          <cstring>lineEdit_fn_repnew</cstring>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="lineEdit_fn_repnew">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="statusTip">
-                          <string>Company Representative First Name</string>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_52">
-                       <item>
-                        <widget class="QLabel" name="label_64">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Middle Name :</string>
-                         </property>
-                         <property name="buddy">
-                          <cstring>lineEdit_mn_repnew</cstring>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="lineEdit_mn_repnew">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="statusTip">
-                          <string>Company Representative Middle Name</string>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_53">
-                       <item>
-                        <widget class="QLabel" name="label_65">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Last Name :</string>
-                         </property>
-                         <property name="buddy">
-                          <cstring>lineEdit_ln_repnew</cstring>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="lineEdit_ln_repnew">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="statusTip">
-                          <string>Company Representative Last Name</string>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_30">
-                       <item>
-                        <widget class="QLabel" name="label_45">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Phone Number :</string>
-                         </property>
-                         <property name="buddy">
-                          <cstring>lineEdit_tell_repnew</cstring>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="lineEdit_tell_repnew">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="statusTip">
-                          <string>Company Representative Phone Number</string>
-                         </property>
-                         <property name="inputMethodHints">
-                          <set>Qt::ImhDigitsOnly</set>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_31">
-                       <item>
-                        <widget class="QLabel" name="label_46">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Email :</string>
-                         </property>
-                         <property name="buddy">
-                          <cstring>lineEdit_email_repnew</cstring>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="lineEdit_email_repnew">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                         <property name="statusTip">
-                          <string>Company Representative Email Address</string>
-                         </property>
-                         <property name="inputMethodHints">
-                          <set>Qt::ImhNone</set>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </item>
-                    </layout>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_7">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                </layout>
-               </widget>
-              </widget>
-             </item>
-            </layout>
+            <layout class="QVBoxLayout" name="verticalLayout_10"/>
            </item>
            <item>
             <layout class="QVBoxLayout" name="verticalLayout_39"/>
@@ -758,308 +473,215 @@
          <widget class="QWidget" name="layoutWidget_2">
           <property name="geometry">
            <rect>
-            <x>810</x>
-            <y>70</y>
-            <width>501</width>
-            <height>461</height>
+            <x>840</x>
+            <y>90</y>
+            <width>441</width>
+            <height>111</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_6">
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_5">
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
              <item>
-              <widget class="QLabel" name="label_8">
-               <property name="font">
-                <font>
-                 <family>System</family>
-                </font>
-               </property>
-               <property name="text">
-                <string>Invoicing</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <layout class="QVBoxLayout" name="verticalLayout_4">
                <item>
-                <spacer name="horizontalSpacer_14">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>40</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item>
-                <layout class="QVBoxLayout" name="verticalLayout_4">
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
                  <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_4">
-                   <item>
-                    <widget class="QSpinBox" name="spinBox_workforce">
-                     <property name="font">
-                      <font>
-                       <family>System</family>
-                       <weight>75</weight>
-                       <bold>true</bold>
-                      </font>
-                     </property>
-                     <property name="statusTip">
-                      <string>Number of wokers needed</string>
-                     </property>
-                     <property name="minimum">
-                      <number>1</number>
-                     </property>
-                     <property name="maximum">
-                      <number>600</number>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_3">
-                     <property name="font">
-                      <font>
-                       <family>System</family>
-                       <weight>75</weight>
-                       <bold>true</bold>
-                      </font>
-                     </property>
-                     <property name="text">
-                      <string>Number of Workers I Require :</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
+                  <widget class="QSpinBox" name="spinBox_workforce">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="statusTip">
+                    <string>Number of wokers needed</string>
+                   </property>
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>600</number>
+                   </property>
+                  </widget>
                  </item>
                  <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_5">
-                   <item>
-                    <widget class="QLabel" name="label_6">
-                     <property name="font">
-                      <font>
-                       <family>System</family>
-                      </font>
-                     </property>
-                     <property name="text">
-                      <string>Categories Available :</string>
-                     </property>
-                     <property name="buddy">
-                      <cstring>comboBox_skill_new</cstring>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QComboBox" name="comboBox_skill_new">
-                     <property name="font">
-                      <font>
-                       <family>System</family>
-                       <weight>75</weight>
-                       <bold>true</bold>
-                      </font>
-                     </property>
-                     <property name="statusTip">
-                      <string>Skill set Requirment</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>choose a skill-set category...</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>House Keeping</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Cathering Services</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Gaurd/Watch Personnel</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Property Security</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Personal Security</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Accountants</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Event Organizing Personnel</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Electric Retailers Personnel</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Hardware Retailers Personnel</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Pharmacutical Retailers Personnel</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Electronic Retailers Personnel</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Agro Retailers Personnel</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>Automobile Retailers Personnel</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_6">
-                   <item>
-                    <widget class="QLabel" name="label_7">
-                     <property name="font">
-                      <font>
-                       <family>System</family>
-                      </font>
-                     </property>
-                     <property name="text">
-                      <string>Rate of Payment :</string>
-                     </property>
-                     <property name="buddy">
-                      <cstring>comboBox_payrate_new</cstring>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QComboBox" name="comboBox_payrate_new">
-                     <property name="font">
-                      <font>
-                       <family>System</family>
-                       <weight>75</weight>
-                       <bold>true</bold>
-                      </font>
-                     </property>
-                     <property name="statusTip">
-                      <string>Payment Rate requirement</string>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>choose a rate...</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>per Hour</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>per Day</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>per Week</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>per Month</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
+                  <widget class="QLabel" name="label_3">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Number of Workers I Require :</string>
+                   </property>
+                  </widget>
                  </item>
                 </layout>
                </item>
                <item>
-                <spacer name="horizontalSpacer_15">
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>40</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Categories Available :</string>
+                   </property>
+                   <property name="buddy">
+                    <cstring>comboBox_skill_new</cstring>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_skill_new">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="statusTip">
+                    <string>Skill set Requirment</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>choose a skill-set category...</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>House Keeping</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Cathering Services</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Gaurd/Watch Personnel</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Property Security</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Personal Security</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Accountants</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Event Organizing Personnel</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Electric Retailers Personnel</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Hardware Retailers Personnel</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Pharmacutical Retailers Personnel</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Electronic Retailers Personnel</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Agro Retailers Personnel</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Automobile Retailers Personnel</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
                </item>
-              </layout>
-             </item>
-             <item>
-              <layout class="QVBoxLayout" name="verticalLayout_3">
                <item>
-                <widget class="QLabel" name="label_2">
-                 <property name="font">
-                  <font>
-                   <family>System</family>
-                   <weight>75</weight>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>List of Available Workers</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QTableView" name="tableView_workers">
-                 <property name="font">
-                  <font>
-                   <family>System</family>
-                   <pointsize>8</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="statusTip">
-                  <string>Worker  availability pick list. click to multi select workers</string>
-                 </property>
-                 <property name="editTriggers">
-                  <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
-                 </property>
-                 <property name="alternatingRowColors">
-                  <bool>true</bool>
-                 </property>
-                 <property name="selectionMode">
-                  <enum>QAbstractItemView::MultiSelection</enum>
-                 </property>
-                 <property name="selectionBehavior">
-                  <enum>QAbstractItemView::SelectRows</enum>
-                 </property>
-                 <property name="gridStyle">
-                  <enum>Qt::SolidLine</enum>
-                 </property>
-                 <property name="sortingEnabled">
-                  <bool>false</bool>
-                 </property>
-                </widget>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Rate of Payment :</string>
+                   </property>
+                   <property name="buddy">
+                    <cstring>comboBox_payrate_new</cstring>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_payrate_new">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="statusTip">
+                    <string>Payment Rate requirement</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>choose a rate...</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>per Hour</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>per Day</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>per Week</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>per Month</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
                </item>
               </layout>
              </item>
@@ -1067,10 +689,381 @@
            </item>
           </layout>
          </widget>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>70</y>
+            <width>421</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>421</width>
+            <height>266</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Ravie</family>
+           </font>
+          </property>
+          <property name="title">
+           <string>Organization/Company Client</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="layoutWidget_8">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>401</width>
+             <height>242</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_40">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_48">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_41">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_49">
+                  <item>
+                   <widget class="QLabel" name="label_4">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Company/Organization Name :</string>
+                    </property>
+                    <property name="buddy">
+                     <cstring>lineEdit_org_name_new</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_org_name_new">
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="statusTip">
+                   <string>Clients Organization Name</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_50"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <family>System</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>Representative Names :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_42">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_51">
+                  <item>
+                   <widget class="QLabel" name="label_63">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>First Name :</string>
+                    </property>
+                    <property name="buddy">
+                     <cstring>lineEdit_fn_repnew</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_fn_repnew">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="statusTip">
+                     <string>Company Representative First Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_52">
+                  <item>
+                   <widget class="QLabel" name="label_64">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Middle Name :</string>
+                    </property>
+                    <property name="buddy">
+                     <cstring>lineEdit_mn_repnew</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_mn_repnew">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="statusTip">
+                     <string>Company Representative Middle Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_53">
+                  <item>
+                   <widget class="QLabel" name="label_65">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Last Name :</string>
+                    </property>
+                    <property name="buddy">
+                     <cstring>lineEdit_ln_repnew</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_ln_repnew">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="statusTip">
+                     <string>Company Representative Last Name</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_30">
+                  <item>
+                   <widget class="QLabel" name="label_45">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Phone Number :</string>
+                    </property>
+                    <property name="buddy">
+                     <cstring>lineEdit_tell_repnew</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_tell_repnew">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="statusTip">
+                     <string>Company Representative Phone Number</string>
+                    </property>
+                    <property name="inputMethodHints">
+                     <set>Qt::ImhDigitsOnly</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_31">
+                  <item>
+                   <widget class="QLabel" name="label_46">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Email :</string>
+                    </property>
+                    <property name="buddy">
+                     <cstring>lineEdit_email_repnew</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_email_repnew">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="statusTip">
+                     <string>Company Representative Email Address</string>
+                    </property>
+                    <property name="inputMethodHints">
+                     <set>Qt::ImhNone</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QTableView" name="tableView_workers">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>380</y>
+            <width>865</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>System</family>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="statusTip">
+           <string>Worker  availability pick list. click to multi select workers</string>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::MultiSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="gridStyle">
+           <enum>Qt::SolidLine</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>350</y>
+            <width>171</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>System</family>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>List of Available Workers</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>840</x>
+            <y>70</y>
+            <width>71</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>System</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Invoicing</string>
+          </property>
+         </widget>
          <zorder>layoutWidget_5</zorder>
          <zorder>layoutWidget_2</zorder>
          <zorder>line_3</zorder>
          <zorder>lcdNumber_user_id</zorder>
+         <zorder>groupBox_6</zorder>
+         <zorder>tableView_workers</zorder>
+         <zorder>label_2</zorder>
+         <zorder>label_8</zorder>
         </widget>
        </widget>
        <widget class="QWidget" name="tab_3">
@@ -1087,7 +1080,7 @@
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:rgb(71, 214, 216)</string>
+          <string notr="true"/>
          </property>
          <property name="title">
           <string>Enter Existing Client  Details</string>
@@ -1150,7 +1143,7 @@
            <rect>
             <x>20</x>
             <y>70</y>
-            <width>771</width>
+            <width>371</width>
             <height>441</height>
            </rect>
           </property>
@@ -1207,19 +1200,6 @@
                     </widget>
                    </item>
                   </layout>
-                 </item>
-                 <item>
-                  <spacer name="horizontalSpacer_32">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>40</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
                  </item>
                 </layout>
                </item>
@@ -1454,289 +1434,7 @@
             </layout>
            </item>
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout">
-             <item>
-              <widget class="QGroupBox" name="groupBox_8">
-               <property name="minimumSize">
-                <size>
-                 <width>421</width>
-                 <height>251</height>
-                </size>
-               </property>
-               <property name="title">
-                <string>Organization/Company Client</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="checked">
-                <bool>false</bool>
-               </property>
-               <widget class="QWidget" name="layoutWidget_10">
-                <property name="geometry">
-                 <rect>
-                  <x>10</x>
-                  <y>20</y>
-                  <width>391</width>
-                  <height>221</height>
-                 </rect>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_52">
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_66">
-                   <item>
-                    <layout class="QVBoxLayout" name="verticalLayout_53">
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_67">
-                       <item>
-                        <widget class="QLabel" name="label_9">
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                          </font>
-                         </property>
-                         <property name="text">
-                          <string>Company/Organization Name :</string>
-                         </property>
-                         <property name="buddy">
-                          <cstring>lineEdit_org_name_new</cstring>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QLineEdit" name="lineEdit_org_name_old">
-                         <property name="enabled">
-                          <bool>false</bool>
-                         </property>
-                         <property name="font">
-                          <font>
-                           <family>System</family>
-                           <pointsize>8</pointsize>
-                           <weight>75</weight>
-                           <bold>true</bold>
-                          </font>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
-                     </item>
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_68"/>
-                     </item>
-                    </layout>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="label_10">
-                   <property name="font">
-                    <font>
-                     <family>System</family>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Representative Names :</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <layout class="QVBoxLayout" name="verticalLayout_54">
-                   <item>
-                    <layout class="QHBoxLayout" name="horizontalLayout_69">
-                     <item>
-                      <widget class="QLabel" name="label_76">
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>First Name :</string>
-                       </property>
-                       <property name="buddy">
-                        <cstring>lineEdit_fn_repold</cstring>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_fn_repold">
-                       <property name="enabled">
-                        <bool>false</bool>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                         <pointsize>8</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <layout class="QHBoxLayout" name="horizontalLayout_70">
-                     <item>
-                      <widget class="QLabel" name="label_77">
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Middle Name :</string>
-                       </property>
-                       <property name="buddy">
-                        <cstring>lineEdit_mn_repold</cstring>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_mn_repold">
-                       <property name="enabled">
-                        <bool>false</bool>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                         <pointsize>8</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <layout class="QHBoxLayout" name="horizontalLayout_71">
-                     <item>
-                      <widget class="QLabel" name="label_78">
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Last Name :</string>
-                       </property>
-                       <property name="buddy">
-                        <cstring>lineEdit_ln_repold</cstring>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_ln_repold">
-                       <property name="enabled">
-                        <bool>false</bool>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                         <pointsize>8</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <layout class="QHBoxLayout" name="horizontalLayout_32">
-                     <item>
-                      <widget class="QLabel" name="label_47">
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Phone Number :</string>
-                       </property>
-                       <property name="buddy">
-                        <cstring>lineEdit_tell_repnew</cstring>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_tell_repold">
-                       <property name="enabled">
-                        <bool>false</bool>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                         <pointsize>8</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                       <property name="inputMethodHints">
-                        <set>Qt::ImhDigitsOnly</set>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <layout class="QHBoxLayout" name="horizontalLayout_33">
-                     <item>
-                      <widget class="QLabel" name="label_48">
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                        </font>
-                       </property>
-                       <property name="text">
-                        <string>Email :</string>
-                       </property>
-                       <property name="buddy">
-                        <cstring>lineEdit_email_repnew</cstring>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLineEdit" name="lineEdit_email_repold">
-                       <property name="enabled">
-                        <bool>false</bool>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>System</family>
-                         <pointsize>8</pointsize>
-                         <weight>75</weight>
-                         <bold>true</bold>
-                        </font>
-                       </property>
-                       <property name="inputMethodHints">
-                        <set>Qt::ImhNone</set>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <spacer name="verticalSpacer_10">
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>20</width>
-                     <height>40</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                </layout>
-               </widget>
-              </widget>
-             </item>
-            </layout>
+            <layout class="QVBoxLayout" name="verticalLayout"/>
            </item>
            <item>
             <layout class="QVBoxLayout" name="verticalLayout_51"/>
@@ -1746,40 +1444,15 @@
          <widget class="QWidget" name="layoutWidget_12">
           <property name="geometry">
            <rect>
-            <x>790</x>
-            <y>70</y>
-            <width>511</width>
-            <height>441</height>
+            <x>830</x>
+            <y>132</y>
+            <width>461</width>
+            <height>131</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_8">
            <item>
-            <widget class="QLabel" name="label_11">
-             <property name="font">
-              <font>
-               <family>System</family>
-              </font>
-             </property>
-             <property name="text">
-              <string>Invoicing</string>
-             </property>
-            </widget>
-           </item>
-           <item>
             <layout class="QHBoxLayout" name="horizontalLayout_8">
-             <item>
-              <spacer name="horizontalSpacer_16">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
              <item>
               <layout class="QVBoxLayout" name="verticalLayout_12">
                <item>
@@ -1984,60 +1657,6 @@
                </item>
               </layout>
              </item>
-             <item>
-              <spacer name="horizontalSpacer_17">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QVBoxLayout" name="verticalLayout_18">
-             <item>
-              <layout class="QVBoxLayout" name="verticalLayout_21">
-               <item>
-                <widget class="QLabel" name="label_15">
-                 <property name="font">
-                  <font>
-                   <family>System</family>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>List of Available Workers</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QTableView" name="tableView_workers_old">
-                 <property name="font">
-                  <font>
-                   <family>System</family>
-                   <pointsize>8</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="alternatingRowColors">
-                  <bool>true</bool>
-                 </property>
-                 <property name="selectionMode">
-                  <enum>QAbstractItemView::MultiSelection</enum>
-                 </property>
-                 <property name="selectionBehavior">
-                  <enum>QAbstractItemView::SelectRows</enum>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
             </layout>
            </item>
           </layout>
@@ -2059,6 +1678,356 @@
             <normaloff>../images/help.png</normaloff>../images/help.png</iconset>
           </property>
          </widget>
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>70</y>
+            <width>421</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>421</width>
+            <height>251</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Organization/Company Client</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="layoutWidget_10">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>391</width>
+             <height>221</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_52">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_66">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_53">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_67">
+                  <item>
+                   <widget class="QLabel" name="label_9">
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Company/Organization Name :</string>
+                    </property>
+                    <property name="buddy">
+                     <cstring>lineEdit_org_name_new</cstring>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_org_name_old">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>System</family>
+                      <pointsize>8</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_68"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="font">
+               <font>
+                <family>System</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>Representative Names :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_54">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_69">
+                <item>
+                 <widget class="QLabel" name="label_76">
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>First Name :</string>
+                  </property>
+                  <property name="buddy">
+                   <cstring>lineEdit_fn_repold</cstring>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_fn_repold">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                    <pointsize>8</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_70">
+                <item>
+                 <widget class="QLabel" name="label_77">
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Middle Name :</string>
+                  </property>
+                  <property name="buddy">
+                   <cstring>lineEdit_mn_repold</cstring>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_mn_repold">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                    <pointsize>8</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_71">
+                <item>
+                 <widget class="QLabel" name="label_78">
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Last Name :</string>
+                  </property>
+                  <property name="buddy">
+                   <cstring>lineEdit_ln_repold</cstring>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_ln_repold">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                    <pointsize>8</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_32">
+                <item>
+                 <widget class="QLabel" name="label_47">
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Phone Number :</string>
+                  </property>
+                  <property name="buddy">
+                   <cstring>lineEdit_tell_repnew</cstring>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_tell_repold">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                    <pointsize>8</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="inputMethodHints">
+                   <set>Qt::ImhDigitsOnly</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_33">
+                <item>
+                 <widget class="QLabel" name="label_48">
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Email :</string>
+                  </property>
+                  <property name="buddy">
+                   <cstring>lineEdit_email_repnew</cstring>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_email_repold">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>System</family>
+                    <pointsize>8</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="inputMethodHints">
+                   <set>Qt::ImhNone</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>350</y>
+            <width>171</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>System</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>List of Available Workers</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>830</x>
+            <y>80</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>System</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Invoicing</string>
+          </property>
+         </widget>
+         <widget class="QTableView" name="tableView_workers_old">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>370</y>
+            <width>891</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>System</family>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::MultiSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+         </widget>
         </widget>
        </widget>
        <widget class="QWidget" name="tab_4">
@@ -2075,7 +2044,7 @@
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:rgb(71, 214, 216)</string>
+          <string notr="true"/>
          </property>
          <property name="title">
           <string>Data view</string>
@@ -2154,7 +2123,7 @@
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:rgb(85, 255, 255)</string>
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>Register</string>
@@ -2182,7 +2151,7 @@
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:rgb(85, 255, 255)</string>
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>Update</string>
@@ -2210,7 +2179,7 @@
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:rgb(85, 255, 255)</string>
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>Delete</string>
@@ -2247,7 +2216,7 @@
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:rgb(85, 255, 255)</string>
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>Login</string>
@@ -2277,7 +2246,7 @@
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color:rgb(85, 255, 255)</string>
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>Back</string>
@@ -2317,7 +2286,7 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(40, 93, 117);color:rgb(71, 214, 216)</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Human Resource Managment System</string>
@@ -2335,7 +2304,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1443</width>
+     <width>1380</width>
      <height>21</height>
     </rect>
    </property>
@@ -2348,7 +2317,6 @@
   <tabstop>lineEdit_kra_pin_new</tabstop>
   <tabstop>lineEdit_regNo_new</tabstop>
   <tabstop>textEdit_address_new</tabstop>
-  <tabstop>groupBox_6</tabstop>
   <tabstop>lineEdit_fn_repnew</tabstop>
   <tabstop>lineEdit_mn_repnew</tabstop>
   <tabstop>lineEdit_ln_repnew</tabstop>
@@ -2357,14 +2325,12 @@
   <tabstop>spinBox_workforce</tabstop>
   <tabstop>comboBox_skill_new</tabstop>
   <tabstop>comboBox_payrate_new</tabstop>
-  <tabstop>tableView_workers</tabstop>
   <tabstop>comboBox_clients_list</tabstop>
   <tabstop>lineEdit_IDNo_old</tabstop>
   <tabstop>lineEdit_invoice_old</tabstop>
   <tabstop>lineEdit_kra_pin_old</tabstop>
   <tabstop>lineEdit_regNo_old</tabstop>
   <tabstop>textEdit_address_old</tabstop>
-  <tabstop>groupBox_8</tabstop>
   <tabstop>lineEdit_org_name_old</tabstop>
   <tabstop>lineEdit_fn_repold</tabstop>
   <tabstop>lineEdit_mn_repold</tabstop>
@@ -2374,7 +2340,6 @@
   <tabstop>spinBox_workforce_2</tabstop>
   <tabstop>comboBox_skill_new_2</tabstop>
   <tabstop>comboBox_payrate_new_2</tabstop>
-  <tabstop>tableView_workers_old</tabstop>
   <tabstop>tableWidget_records</tabstop>
   <tabstop>lineEdit_IDNo_new</tabstop>
   <tabstop>pushButton_update</tabstop>

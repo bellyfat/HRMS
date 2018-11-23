@@ -4,12 +4,15 @@ from EmployeeForm import *
 from ClientForm import *
 from WorkerForm import *
 from signup_raw import *
-from login_raw import *
-from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QTableView, QMenuBar, QStatusBar, QProgressBar
+from login import *
+from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox, QTableView, QMenuBar, QStatusBar, QProgressBar, QDialog
 from PyQt5 import QtSql
 from PyQt5 import QtCore
-from PyQt5.QtCore import QTimer
+from PyQt5.QtCore import QTimer, pyqtSignal
 import sqlite3
+from functools import partial
+import PyQt5.uic as uic
+from PyQt5.QtPrintSupport import QPrintDialog, QPrinter
 
 
 
@@ -20,25 +23,32 @@ import sqlite3
 ##############################################dashForm start##################################################################################
 class HRMForm(QMainWindow):
 
-    def __init__(self, master=None):
-        QMainWindow.__init__(self, master)
+    def __init__(self):
+        super(HRMForm, self).__init__()
         self.dashboard = Ui_HRM_Dashboard_view()
+        self.login = LoginDialog()
 
         self.dashboard.setupUi(self)
 
-        self.createProgressBar()
+        #self.createProgressBar()
 
         self.dashboard.actionNewEmployee.triggered.connect(lambda:self.new_employee())
         self.dashboard.actionNewWorker.triggered.connect(lambda: self.new_worker())
         self.dashboard.actionNewClient.triggered.connect(lambda: self.new_client())
-        self.dashboard.pushButton_user_login.clicked.connect(lambda : self.login_user())
-        self.dashboard.pushButton_user_reg.clicked.connect(lambda : self.new_user())
+        self.dashboard.actionQiut_Application.triggered.connect(lambda: self.close())
+        self.dashboard.pushButton_user_login.clicked.connect(lambda: self.login_user())
+        self.dashboard.pushButton_user_reg.clicked.connect(lambda: self.new_user())
+
+        self.dashboard.toolButton_print.clicked.connect(self.createPrintDialog)
+
+        self.login.got_username.connect(self.show_it)
+
 
         self.statusbar = QtWidgets.QStatusBar(self)
         self.statusbar.setObjectName("statusbar")
         self.setStatusBar(self.statusbar)
 
-        self.show()
+
 
     def dashboardWindowShow(self):
         self.dashboardWindow = QMainWindow()
@@ -65,7 +75,7 @@ class HRMForm(QMainWindow):
 
 
     def new_employee(self):
-        HRMForm.destroy(self)
+        HRMForm.close(self)
         self.window = EmployeeForm()
         self.window.showMaximized()
 
@@ -77,17 +87,17 @@ class HRMForm(QMainWindow):
 
     def login_user(self):
         HRMForm.destroy(self)
-        self.window = LoginForm()
+        self.window = LoginDialog()
         self.window.show()
 
     def new_client(self):
-        HRMForm.destroy(self)
+        HRMForm.close(self)
         self.window = ClientForm()
         self.window.showMaximized()
 
 
     def new_worker(self):
-        HRMForm.destroy(self)
+        HRMForm.close(self)
         self.window = WorkerForm()
         self.window.showMaximized()
 
@@ -102,15 +112,74 @@ class HRMForm(QMainWindow):
         UsersStaff()
 
 
+    def show_it(self, the_username):
+        self.dashboard.label_welcome_username.setText(the_username)
+
+
+    def createPrintDialog(self):
+
+        mylist =[]
+
+        printer = QPrinter(QPrinter.HighResolution)
+        dialog = QPrintDialog(printer, self)
+
+        if dialog.exec_() == QPrintDialog.Accepted:
+            self.dashboard.label_welcome_username.print_(printer)
+
 
 ###########################################################################################################################################
 ##############################################dashForm end##################################################################################
 
+class LoginDialog(QDialog, Ui_HRM_Login_view):
+
+    got_username = pyqtSignal(str)
+
+    def __init__(self, *args, **kwargs):
+        QDialog.__init__(self, *args, **kwargs)
+        self.login = Ui_HRM_Login_view()
+        self.login.setupUi(self)
+
+
+
+        self.login.pushButton_login.clicked.connect(lambda: self.login_check())
+
+
+
+
+    def login_check(self):
+        with sqlite3.connect('database_hrm.db') as db:
+            c = db.cursor()
+
+        self.un = self.login.lineEdit_un.text()
+        password = self.login.lineEdit_pass.text()
+        c.execute('SELECT * FROM superusers WHERE User_Name = ? and Password = ?', (self.un, password))
+        data = c.fetchone()
+        db.commit()
+        if data!=None:
+            QMessageBox.information(self, 'Message', "Logged Successfully !!!", QMessageBox.Ok)
+            self.accept()
+        else:
+            QMessageBox.information(self, 'Error',
+                                    "No Account With That Username And Password\nPlease check your Credatials",
+                                    QMessageBox.Ok)
+
+    def comfirm(self):
+
+        self.value = self.login.lineEdit_un.text()
+        self.got_username.emit(self.value)
+        print (self.value)
+
+
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    login = LoginDialog()
+    w = HRMForm()
+    w.hide()
+    if login.exec_() == QtWidgets.QDialog.Accepted:
 
-    frm = HRMForm()
-    frm.showMaximized()
+
+        w.showMaximized()
+
     sys.exit(app.exec_())
-

@@ -18,7 +18,7 @@
     <normaloff>../images/icon.png</normaloff>../images/icon.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(40, 93, 117);</string>
+   <string notr="true">background-color:rgb(170, 255, 255)</string>
   </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
@@ -76,7 +76,7 @@
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color:rgb(85, 255, 255)</string>
+         <string notr="true">)</string>
         </property>
         <property name="text">
          <string>Human Resourse Management System</string>
@@ -124,7 +124,7 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;User Login&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="styleSheet">
-           <string notr="true">color:rgb(85, 255, 255)</string>
+           <string notr="true"/>
           </property>
           <property name="text">
            <string>User Login</string>
@@ -140,7 +140,7 @@
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">color:rgb(85, 255, 255)</string>
+           <string notr="true"/>
           </property>
           <property name="text">
            <string>Register A New account</string>
@@ -156,7 +156,7 @@
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">color:rgb(85, 255, 255)</string>
+           <string notr="true"/>
           </property>
           <property name="text">
            <string>Demo</string>
@@ -172,7 +172,7 @@
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">color:rgb(85, 255, 255)</string>
+           <string notr="true"/>
           </property>
           <property name="text">
            <string>Website</string>
@@ -218,7 +218,7 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>1050</x>
+     <x>10</x>
      <y>30</y>
      <width>251</width>
      <height>27</height>

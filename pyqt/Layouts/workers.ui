@@ -18,7 +18,7 @@
     <normaloff>../images/icon.png</normaloff>../images/icon.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(40, 93, 117);</string>
+   <string notr="true">background-color:rgb(170, 255, 255)</string>
   </property>
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
@@ -49,6 +49,14 @@
        <width>1111</width>
        <height>521</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>System</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="title">
       <string>Enter New Worker Details</string>
@@ -92,7 +100,7 @@
         <x>20</x>
         <y>89</y>
         <width>1051</width>
-        <height>423</height>
+        <height>429</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_24">
@@ -102,6 +110,14 @@
           <layout class="QVBoxLayout" name="verticalLayout_12">
            <item>
             <widget class="QLabel" name="label_19">
+             <property name="font">
+              <font>
+               <family>System</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="text">
               <string>National ID No.</string>
              </property>
@@ -112,6 +128,14 @@
            </item>
            <item>
             <widget class="QLineEdit" name="lineEdit_IDNo">
+             <property name="font">
+              <font>
+               <family>System</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="statusTip">
               <string>Enter Worker Nation ID Number </string>
              </property>
@@ -126,6 +150,14 @@
           <layout class="QVBoxLayout" name="verticalLayout_13">
            <item>
             <widget class="QLabel" name="label_20">
+             <property name="font">
+              <font>
+               <family>System</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="text">
               <string>Worker HRM Code :</string>
              </property>
@@ -139,6 +171,14 @@
              <property name="enabled">
               <bool>false</bool>
              </property>
+             <property name="font">
+              <font>
+               <family>System</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="statusTip">
               <string>Auto filled HRM Code</string>
              </property>
@@ -150,6 +190,14 @@
           <layout class="QVBoxLayout" name="verticalLayout_14">
            <item>
             <widget class="QLabel" name="label_21">
+             <property name="font">
+              <font>
+               <family>System</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="text">
               <string>Registration Date Stamp</string>
              </property>
@@ -162,6 +210,14 @@
             <widget class="QDateTimeEdit" name="dateTimeEdit_stamp">
              <property name="enabled">
               <bool>false</bool>
+             </property>
+             <property name="font">
+              <font>
+               <family>System</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
              </property>
              <property name="statusTip">
               <string>System time stamp</string>
@@ -179,6 +235,14 @@
             <layout class="QVBoxLayout" name="verticalLayout_15">
              <item>
               <widget class="QLabel" name="label_22">
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="text">
                 <string>KRA PIN</string>
                </property>
@@ -189,6 +253,14 @@
              </item>
              <item>
               <widget class="QLineEdit" name="lineEdit_kra_pin">
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="statusTip">
                 <string>Enter Kenya Revenue of Authority Personal Identification Number</string>
                </property>
@@ -200,6 +272,14 @@
             <layout class="QVBoxLayout" name="verticalLayout_10">
              <item>
               <widget class="QLabel" name="label_18">
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="text">
                 <string>Registration Number:</string>
                </property>
@@ -212,6 +292,14 @@
               <widget class="QLineEdit" name="lineEdit_regNo">
                <property name="enabled">
                 <bool>false</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
                </property>
                <property name="statusTip">
                 <string>Auto-filled User Registration number</string>
@@ -229,6 +317,14 @@
                  <horstretch>0</horstretch>
                  <verstretch>0</verstretch>
                 </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
                </property>
                <property name="text">
                 <string>Address :</string>
@@ -299,6 +395,14 @@
                 <layout class="QHBoxLayout" name="horizontalLayout_6">
                  <item>
                   <widget class="QLabel" name="label_23">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>First Name :</string>
                    </property>
@@ -315,6 +419,14 @@
                      <height>0</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="statusTip">
                     <string>Enter Worker First Name</string>
                    </property>
@@ -326,6 +438,14 @@
                 <layout class="QHBoxLayout" name="horizontalLayout_5">
                  <item>
                   <widget class="QLabel" name="label_24">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Middle Name :</string>
                    </property>
@@ -342,6 +462,14 @@
                      <height>0</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="statusTip">
                     <string>Enter Worker Middle name</string>
                    </property>
@@ -353,6 +481,14 @@
                 <layout class="QHBoxLayout" name="horizontalLayout_8">
                  <item>
                   <widget class="QLabel" name="label_25">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Last Name :</string>
                    </property>
@@ -368,6 +504,14 @@
                      <width>180</width>
                      <height>0</height>
                     </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
                    </property>
                    <property name="statusTip">
                     <string>Enter Worker Last Name</string>
@@ -392,6 +536,14 @@
                      <horstretch>0</horstretch>
                      <verstretch>0</verstretch>
                     </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
                    </property>
                    <property name="text">
                     <string>Phone Number :</string>
@@ -435,6 +587,14 @@
                      <verstretch>0</verstretch>
                     </sizepolicy>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Email :</string>
                    </property>
@@ -457,6 +617,14 @@
                      <height>0</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="statusTip">
                     <string>Enter Worker Email address</string>
                    </property>
@@ -477,6 +645,14 @@
               <layout class="QHBoxLayout" name="horizontalLayout_4">
                <item>
                 <widget class="QLabel" name="label_27">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="statusTip">
                   <string>Select worker gender</string>
                  </property>
@@ -490,6 +666,14 @@
                </item>
                <item>
                 <widget class="QRadioButton" name="radioButton_m">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>Male</string>
                  </property>
@@ -497,6 +681,14 @@
                </item>
                <item>
                 <widget class="QRadioButton" name="radioButton_f">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>Female</string>
                  </property>
@@ -508,6 +700,14 @@
               <layout class="QHBoxLayout" name="horizontalLayout_3">
                <item>
                 <widget class="QLabel" name="label_26">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>Date Of Birth :</string>
                  </property>
@@ -518,6 +718,14 @@
                </item>
                <item>
                 <widget class="QDateEdit" name="dateEdit_dob">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="statusTip">
                   <string>select woker date of birth</string>
                  </property>
@@ -559,6 +767,14 @@
                <verstretch>0</verstretch>
               </sizepolicy>
              </property>
+             <property name="font">
+              <font>
+               <family>System</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="text">
               <string>Skill- Set Category</string>
              </property>
@@ -580,6 +796,14 @@
                <width>200</width>
                <height>0</height>
               </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>System</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
              </property>
              <property name="statusTip">
               <string>Select worker skill set</string>
@@ -671,6 +895,14 @@
                  <height>210</height>
                 </size>
                </property>
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="title">
                 <string>Payment Mode</string>
                </property>
@@ -686,6 +918,14 @@
                 <layout class="QVBoxLayout" name="verticalLayout">
                  <item>
                   <widget class="QRadioButton" name="radioButton_hr">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>per Hour</string>
                    </property>
@@ -693,6 +933,14 @@
                  </item>
                  <item>
                   <widget class="QRadioButton" name="radioButton_day">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>per Day</string>
                    </property>
@@ -700,6 +948,14 @@
                  </item>
                  <item>
                   <widget class="QRadioButton" name="radioButton_5day">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>per Week(5 days)</string>
                    </property>
@@ -707,6 +963,14 @@
                  </item>
                  <item>
                   <widget class="QRadioButton" name="radioButton_4">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>per Week(6 days)</string>
                    </property>
@@ -714,6 +978,14 @@
                  </item>
                  <item>
                   <widget class="QRadioButton" name="radioButton_5">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>per Week(7 days)</string>
                    </property>
@@ -721,6 +993,14 @@
                  </item>
                  <item>
                   <widget class="QRadioButton" name="radioButton_6">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>per Month(21 days)</string>
                    </property>
@@ -728,6 +1008,14 @@
                  </item>
                  <item>
                   <widget class="QRadioButton" name="radioButton_7">
+                   <property name="font">
+                    <font>
+                     <family>System</family>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>per Month(25)</string>
                    </property>
@@ -753,6 +1041,14 @@
                <height>160</height>
               </size>
              </property>
+             <property name="font">
+              <font>
+               <family>System</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="statusTip">
               <string>Select worker availabilty</string>
              </property>
@@ -764,13 +1060,21 @@
                <rect>
                 <x>10</x>
                 <y>20</y>
-                <width>131</width>
+                <width>137</width>
                 <height>131</height>
                </rect>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_9">
                <item>
                 <widget class="QRadioButton" name="radioButton_2">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>Immediatelly</string>
                  </property>
@@ -778,6 +1082,14 @@
                </item>
                <item>
                 <widget class="QRadioButton" name="radioButton_8">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>a day Notice</string>
                  </property>
@@ -785,6 +1097,14 @@
                </item>
                <item>
                 <widget class="QRadioButton" name="radioButton_3">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>two weeks Notice</string>
                  </property>
@@ -792,6 +1112,14 @@
                </item>
                <item>
                 <widget class="QRadioButton" name="radioButton_9">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>a week Notice</string>
                  </property>
@@ -799,6 +1127,14 @@
                </item>
                <item>
                 <widget class="QRadioButton" name="radioButton">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>a Month Notice</string>
                  </property>
@@ -814,6 +1150,14 @@
               <layout class="QHBoxLayout" name="horizontalLayout_13">
                <item>
                 <widget class="QLabel" name="label_3">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>Experience :Years</string>
                  </property>
@@ -821,6 +1165,14 @@
                </item>
                <item>
                 <widget class="QSpinBox" name="spinBox_experience">
+                 <property name="font">
+                  <font>
+                   <family>System</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="statusTip">
                   <string>Select woker experience Level</string>
                  </property>
@@ -923,6 +1275,14 @@
           <height>500</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>System</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="alternatingRowColors">
          <bool>true</bool>
         </property>
@@ -963,6 +1323,14 @@
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_reg">
+      <property name="font">
+       <font>
+        <family>System</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Register</string>
       </property>
@@ -983,6 +1351,14 @@
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_update">
+      <property name="font">
+       <font>
+        <family>System</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Update</string>
       </property>
@@ -1003,6 +1379,14 @@
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_delete">
+      <property name="font">
+       <font>
+        <family>System</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Delete</string>
       </property>
@@ -1023,6 +1407,14 @@
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_login">
+      <property name="font">
+       <font>
+        <family>System</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Reset</string>
       </property>
@@ -1043,6 +1435,14 @@
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_back">
+      <property name="font">
+       <font>
+        <family>System</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
        <string>Back</string>
       </property>

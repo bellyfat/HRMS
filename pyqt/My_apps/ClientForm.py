@@ -9,22 +9,17 @@ from PyQt5.QtCore import QDateTime, QDate, QTime, Qt
 import sqlite3
 import random
 import string
-#import MySQLdb as hrmDB
 
 
-
+# import MySQLdb as hrmDB
 
 
 class ClientForm(QMainWindow):
-
-
 
     def __init__(self, master=None):
         QMainWindow.__init__(self, master)
         self.clients = Ui_HRM_Clients_view()
         self.clients.setupUi(self)
-        
-
 
         menubar = QtWidgets.QMenuBar(self)
         menubar.setGeometry(QtCore.QRect(0, 0, 1516, 21))
@@ -61,10 +56,6 @@ class ClientForm(QMainWindow):
         self.clients.dateTimeEdit_stampOld.setText(stamp)
         print(stamp)
 
-
-
-
-
         self.db = QtSql.QSqlDatabase.addDatabase('QSQLITE')
         self.db.setDatabaseName('database_hrm.db')
         self.model = QtSql.QSqlTableModel()
@@ -97,20 +88,15 @@ class ClientForm(QMainWindow):
         c = conn.cursor()
         c.execute('SELECT Company_Name from user_clients')
         rows = c.fetchall()
-        if rows!=None:
+        if rows != None:
 
             for row in rows:
-                #print(row)
+                # print(row)
                 self.clients.comboBox_clients_list.addItems(row)
 
-
-
-
         a = self.random_string_generator()
-        #print(a)
+        # print(a)
         self.clients.lineEdit_invoice_new.setText("2018-" + a)
-
-
 
         self.db1 = QtSql.QSqlDatabase.addDatabase('QSQLITE')
         self.db1.setDatabaseName('database_hrm.db')
@@ -118,7 +104,7 @@ class ClientForm(QMainWindow):
         self.model1.setTable('user_employees')
         self.model1.setEditStrategy(QtSql.QSqlTableModel.OnFieldChange)
         self.model1.select()
-       # self.model.setHeaderData(0, QtCore.Qt.Horizontal, "Worker_hrm_code")
+        # self.model.setHeaderData(0, QtCore.Qt.Horizontal, "Worker_hrm_code")
         self.model1.setHeaderData(1, QtCore.Qt.Horizontal, "First_Name")
         self.model1.setHeaderData(2, QtCore.Qt.Horizontal, "Middle_Name")
         self.model1.setHeaderData(3, QtCore.Qt.Horizontal, "Last_Name")
@@ -154,13 +140,11 @@ class ClientForm(QMainWindow):
 
         self.show()
 
-
         self.clients.pushButton_reg.clicked.connect(self.set_data)
         # self.clients.pushButton_update.clicked.connect(self.updaterow)
         self.clients.pushButton_back.clicked.connect(self.delrow)
         self.clients.pushButton_delete.clicked.connect(self.delrow)
-        #self.clients.pushButton_login.clicked.connect(self.connection)
-
+        # self.clients.pushButton_login.clicked.connect(self.connection)
 
         print(self.clients.tableWidget_records.currentIndex().row())
         print(self.clients.tableView_workers_old.currentIndex().row())
@@ -171,9 +155,9 @@ class ClientForm(QMainWindow):
         query = QSqlQuery()
         query.prepare('SELECT * from user_clients WHERE Company_Name=:client')
         query.bindValue(':client', client)
-        rows = query.exec_()
-        print (rows)
-        for rows in query:
+        rows = query.fetchall()
+        print(rows)
+        for row in query:
             self.clients.lineEdit_invoice_new.setText(row[2])
             self.clients.lineEdit_kra_pin_new.setText(row[2])
             self.clients.lineEdit_org_name_new.setText(row[2])
@@ -182,15 +166,11 @@ class ClientForm(QMainWindow):
             self.clients.lineEdit_ln_repnew.setText(row[2])
             self.clients.lineEdit_tell_repnew.setText(row[2])
             self.clients.lineEdit_email_repnew.setText(row[2])
-        #self.clients.lineEdit_IDNo_new.text()
+        # self.clients.lineEdit_IDNo_new.text()
         reg_date = stamp
         # reg_no = self.clients.lineEdit_regNo_new.text()
 
         # address = self.clients.lineEdit_address.text()
-
-
-
-
 
     def showMessageBox(self, title, message):
         msgBox = QtGui.QMessageBox()
@@ -206,22 +186,22 @@ class ClientForm(QMainWindow):
             conn = sqlite3.connect('database_hrm.db')
             c = conn.cursor()
             c.execute("CREATE TABLE IF NOT EXISTS user_clients(User_id  INTEGER PRIMARY KEY AUTOINCREMENT,"
-              "National_ID VARCHAR (20),"
-              "Registration_Date   VARCHAR,"
-              "Registration_Number VARCHAR (20),"
-              "Client_invoice_Number VARCHAR (20),"
-              "Company_Name VARCHAR (50),"
-              "KRA_PIN VARCHAR (20),"
-              "First_Name          VARCHAR (20),"
-              "Middle_Name         VARCHAR (20),"
-              "Last_Name           VARCHAR (20),"
-              "Phone               INTEGER (10),"
-              "Email               VARCHAR (50),"
-              "Address             VARCHAR (50),"
-              "Workforce           INTEGER(5),"
-              "Skills          VARCHAR (20),"
-              "Payment_Rate        VARCHAR (20),"
-              "User_role          VARCHAR (20))")
+                      "National_ID VARCHAR (20),"
+                      "Registration_Date   VARCHAR,"
+                      "Registration_Number VARCHAR (20),"
+                      "Client_invoice_Number VARCHAR (20),"
+                      "Company_Name VARCHAR (50),"
+                      "KRA_PIN VARCHAR (20),"
+                      "First_Name          VARCHAR (20),"
+                      "Middle_Name         VARCHAR (20),"
+                      "Last_Name           VARCHAR (20),"
+                      "Phone               INTEGER (10),"
+                      "Email               VARCHAR (50),"
+                      "Address             VARCHAR (50),"
+                      "Workforce           INTEGER(5),"
+                      "Skills          VARCHAR (20),"
+                      "Payment_Rate        VARCHAR (20),"
+                      "User_role          VARCHAR (20))")
             print('Operational:', "Table Created Successfully")
 
             QMessageBox.information(self, 'User', "Table Data created  Successfully", QMessageBox.Ok)
@@ -267,19 +247,19 @@ class ClientForm(QMainWindow):
             c = conn.cursor()
 
             c.execute(
-            "INSERT INTO user_clients(National_ID,"
-            " Registration_Date,"
-            " Client_invoice_Number,"
-            " Company_Name, KRA_PIN,"
-            " First_Name, Middle_Name,"
-            " Last_Name,"
-            " Phone,"
-            " Email,"
-            " User_role,"
-            " Payment_Rate,"
-            " Skills,"
-            " Workforce)VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-            (nid, reg_date, hrm_code, org_name, kra, fn, mn, ln, phone, email, urole, pay_rate, skill, force))
+                "INSERT INTO user_clients(National_ID,"
+                " Registration_Date,"
+                " Client_invoice_Number,"
+                " Company_Name, KRA_PIN,"
+                " First_Name, Middle_Name,"
+                " Last_Name,"
+                " Phone,"
+                " Email,"
+                " User_role,"
+                " Payment_Rate,"
+                " Skills,"
+                " Workforce)VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                (nid, reg_date, hrm_code, org_name, kra, fn, mn, ln, phone, email, urole, pay_rate, skill, force))
 
             conn.commit()
             c.close()
@@ -294,7 +274,8 @@ class ClientForm(QMainWindow):
     def view_data(self):
         print("TODO")
 
-    def random_string_generator(self, size=12, chars=string.ascii_uppercase + string.digits):
+    @staticmethod
+    def random_string_generator(size=12, chars=string.ascii_uppercase + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))
 
     def set_data(self):
@@ -304,9 +285,6 @@ class ClientForm(QMainWindow):
 
         except ValueError:
             QMessageBox.information(self, "User Error", "Sorry, An Error Occurred!!", QMessageBox.Ok)
-
-
-
 
     def addToDb(self):
         print(self.i)
@@ -337,7 +315,9 @@ class ClientForm(QMainWindow):
         with sqlite3.connect('database_hrm.db') as dbconn:
             c = dbconn.cursor()
         c.execute(
-            "INSERT INTO user_clients(National_ID, Registration_Date, Client_invoice_Number, Company_Name, KRA_PIN, First_Name, Middle_Name, Last_Name,Phone, Email,User_role,Payment_Rate,Skills,Workforce)VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "INSERT INTO user_clients(National_ID, Registration_Date, Client_invoice_Number, Company_Name, KRA_PIN, "
+            "First_Name, Middle_Name, Last_Name,Phone, Email,User_role,Payment_Rate,Skills,Workforce)VALUES(?, ?, ?, "
+            "?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (nid, reg_date, hrm_code, org_name, kra, fn, mn, ln, phone, email, urole, pay_rate, skill, force))
         QMessageBox.information(self, 'Success', "Info Added Successfully !!!", QMessageBox.Ok)
         print('Info Added Successfully')
@@ -346,13 +326,10 @@ class ClientForm(QMainWindow):
 
         self.clients.lcdNumber_user_id.display(self.i)
 
-
         # self.clear1()
         dbconn.commit()
         c.close()
         dbconn.close()
-
-        
 
     def delrow(self):
 
@@ -361,16 +338,14 @@ class ClientForm(QMainWindow):
             self.i -= 1
             self.clients.lcdNumber_user_id.display(self.i)
         else:
-            QMessageBox.question(self,'Message', "Please select a row would you like to delete", QMessageBox.Ok)
-            
+            QMessageBox.question(self, 'Message', "Please select a row would you like to delete", QMessageBox.Ok)
 
     def back_home(self):
-        ClientForm.hide(self)
+        ClientForm.close(self)
         self.window = HRMForm()
         self.window.showMaximized()
 
-
-    #def connection(self):
+    # def connection(self):
     #    try:
     #        mdb = hrmDB.connect('localhost', 'root', '', 'HRMSDB')
     #        QMessageBox.about(self, 'Connection', 'Successfully Connected to DB')
@@ -378,7 +353,6 @@ class ClientForm(QMainWindow):
     #    except hrmDB.Error as e:
     #        QMessageBox.about(self, 'Connection', 'Not Connected Successfully Connected to DB')
     #        sys.exit()
-
 
 
 if __name__ == '__main__':

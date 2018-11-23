@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1379</width>
-    <height>921</height>
+    <height>685</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -24,7 +24,7 @@
     <normaloff>../images/icon.png</normaloff>../images/icon.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(40, 93, 117);</string>
+   <string notr="true">background-color:rgb(170, 255, 255)</string>
   </property>
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
@@ -70,7 +70,7 @@
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">color:rgb(0, 255, 255)</string>
+      <string notr="true"/>
      </property>
      <property name="title">
       <string>Enter New Employee  Details</string>
@@ -1292,8 +1292,10 @@
       </property>
       <property name="font">
        <font>
-        <family>Playbill</family>
+        <family>Courier New</family>
         <pointsize>40</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
@@ -1345,7 +1347,7 @@
          <bool>true</bool>
         </property>
         <property name="styleSheet">
-         <string notr="true">color:rgb(38, 152, 154) background-colorrgb(0, 255, 0);</string>
+         <string notr="true"/>
         </property>
         <property name="frameShape">
          <enum>QFrame::Panel</enum>
@@ -1407,7 +1409,7 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color:rgb(255, 255, 255)</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Register</string>
@@ -1450,7 +1452,7 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color:rgb(255, 255, 255)</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Delete</string>
@@ -1480,7 +1482,7 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color:rgb(255, 255, 255)</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Reset</string>
@@ -1510,7 +1512,7 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color:rgb(255, 255, 255)</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Back</string>
