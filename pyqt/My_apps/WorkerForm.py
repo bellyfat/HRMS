@@ -169,9 +169,7 @@ class WorkerForm(QMainWindow):
             self.show()
 
     def back_home(self):
-        WorkerForm.destroy(self)
-        self.window = HRMForm()
-        self.window.showMaximized()
+        self.close()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

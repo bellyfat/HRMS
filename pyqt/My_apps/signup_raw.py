@@ -118,14 +118,14 @@ class RegForm(QDialog):
 
     def back_home(self):
         #self.exit_action = QtWidgets.qApp.quit()
-        self.window = HRMForm(self)
+        self.window = HRMForm()
         self.window.showMaximized()
-        self.close(self)
+        self.close()
 
     def login_user(self):
-        self.close(self)
+        self.close()
         self.window = HRMForm()
-        self.window.show()
+        self.window.showMaximized()
 
 
 if __name__ == '__main__':

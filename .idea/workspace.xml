@@ -17,7 +17,6 @@
       <change beforePath="$PROJECT_DIR$/pyqt/My_apps/EmployeeForm.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pyqt/My_apps/PayrollRaw.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pyqt/My_apps/WorkerForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyqt/My_apps/WorkerForm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyqt/My_apps/admin_raw.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyqt/My_apps/admin_raw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyqt/My_apps/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyqt/My_apps/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyqt/My_apps/clients.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyqt/My_apps/clients.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyqt/My_apps/dashboard.py" beforeDir="false" />
@@ -31,10 +30,6 @@
       <change beforePath="$PROJECT_DIR$/pyqt/My_apps/signup_raw.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyqt/My_apps/signup_raw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyqt/Scripts/python.exe" beforeDir="false" afterPath="$PROJECT_DIR$/pyqt/Scripts/python.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyqt/Scripts/pythonw.exe" beforeDir="false" afterPath="$PROJECT_DIR$/pyqt/Scripts/pythonw.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyqt/images/icons8-search-50 (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyqt/images/printer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyqt/images/solar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyqt/images/userP.png" beforeDir="false" />
     </list>
     <ignored path=".idea/" />
     <ignored path="pyqt/Scripts/" />
@@ -56,15 +51,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyqt/My_apps/admin_raw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4165">
-              <caret line="440" column="30" selection-start-line="440" selection-start-column="30" selection-end-line="440" selection-end-column="30" />
+            <state relative-caret-position="7324">
+              <caret line="1114" column="27" selection-start-line="1114" selection-start-column="27" selection-end-line="1114" selection-end-column="27" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#1165#15215#0" />
+                <element signature="e#15542#15734#0" />
+                <element signature="e#16059#16351#0" />
+                <element signature="e#16676#28022#0" />
+                <element signature="e#17816#17951#0" />
+                <element signature="e#17986#18700#0" />
+                <element signature="e#28339#32023#0" />
+                <element signature="e#32347#45237#0" />
+                <element signature="e#45554#48083#0" />
+                <element signature="e#47076#47221#0" />
+                <element signature="e#48403#49810#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyqt/Layouts/clients.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1535" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pyqt/My_apps/clients.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="1525" lean-forward="true" selection-start-line="1525" selection-end-line="1525" />
             </state>
           </provider>
         </entry>
@@ -143,14 +165,15 @@
         <option value="$PROJECT_DIR$/pyqt/My_apps/WorkerForm.py" />
         <option value="$PROJECT_DIR$/pyqt/My_apps/receipts.py" />
         <option value="$PROJECT_DIR$/pyqt/My_apps/admin_raw.py" />
+        <option value="$PROJECT_DIR$/pyqt/My_apps/clients.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1010" />
+    <option name="width" value="1456" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -186,7 +209,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Django/MarketPlace" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -524,24 +547,32 @@
       <option name="project" value="LOCAL" />
       <updated>1542974886030</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Version 1.0.14 implement a single file">
+      <created>1554219474567</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1554219474567</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4974705" visible="true" weight="0.13681242" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4974705" visible="true" weight="0.13616072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5025295" side_tool="true" weight="0.14955357" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22957198" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22705314" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39811543" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50074404" side_tool="true" weight="0.5767285" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49925596" weight="0.47554806" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49925596" weight="0.47543162" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32827586" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3540856" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -615,7 +646,8 @@
     <MESSAGE value="Version 1.0.10 revised" />
     <MESSAGE value="Version 1.0.11 revised" />
     <MESSAGE value="Version 1.0.12 revised added payroll and banking" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.12 revised added payroll and banking" />
+    <MESSAGE value="Version 1.0.14 implement a single file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.0.14 implement a single file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pyqt/My_app/worker.py" />
@@ -747,9 +779,6 @@
     <entry file="file://$PROJECT_DIR$/pyqt/My_apps/BaseForm.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyqt/My_apps/base.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyqt/My_apps/receipts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12172">
@@ -757,21 +786,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyqt/My_apps/clients.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1621">
-          <caret line="1270" column="51" selection-start-line="1270" selection-start-column="51" selection-end-line="1270" selection-end-column="51" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/pyqt/My_apps/base.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pyqt/My_apps/admin_raw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4165">
-          <caret line="440" column="30" selection-start-line="440" selection-start-column="30" selection-end-line="440" selection-end-column="30" />
+        <state relative-caret-position="7324">
+          <caret line="1114" column="27" selection-start-line="1114" selection-start-column="27" selection-end-line="1114" selection-end-column="27" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#1165#15215#0" />
+            <element signature="e#15542#15734#0" />
+            <element signature="e#16059#16351#0" />
+            <element signature="e#16676#28022#0" />
+            <element signature="e#17816#17951#0" />
+            <element signature="e#17986#18700#0" />
+            <element signature="e#28339#32023#0" />
+            <element signature="e#32347#45237#0" />
+            <element signature="e#45554#48083#0" />
+            <element signature="e#47076#47221#0" />
+            <element signature="e#48403#49810#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyqt/Layouts/clients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1535" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyqt/My_apps/clients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="1525" lean-forward="true" selection-start-line="1525" selection-end-line="1525" />
         </state>
       </provider>
     </entry>

@@ -2,19 +2,43 @@
 <ui version="4.0">
  <class>empSearchDialog</class>
  <widget class="QDialog" name="empSearchDialog">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>697</width>
-    <height>296</height>
+    <height>293</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>System</family>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
   </property>
   <property name="windowTitle">
    <string>Employee Search Box</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../images/icon.png</normaloff>../images/icon.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color:rgb(170, 255, 255)</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="Kenya"/>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -77,7 +101,7 @@
     <string>Search</string>
    </property>
   </widget>
-  <widget class="QTableView" name="tableView">
+  <widget class="QTableView" name="tableView_search">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -94,12 +118,24 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>230</y>
+     <x>590</x>
+     <y>80</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -114,6 +150,10 @@
    </property>
    <property name="text">
     <string>Search</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icons8-search-50 (1).png</normaloff>../images/icons8-search-50 (1).png</iconset>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
